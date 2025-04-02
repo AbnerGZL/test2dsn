@@ -1,12 +1,13 @@
+# Usa una imagen base de PHP
 FROM php:8.1-apache
 
-# Install composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
+# Instala las dependencias necesarias para PostgreSQL
 RUN apt-get update && apt-get install -y \
 libpq-dev \
-&& doctor-php-ext-install pdo pdo-pgsql pgsql
+&& docker-php-ext-install pdo pdo_pgsql pgsql
 
+# Copia el contenido de tu aplicación al contenedor
 COPY . /var/www/html/
 
+# Expone el puerto 80
 EXPOSE 80
