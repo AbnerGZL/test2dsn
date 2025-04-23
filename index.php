@@ -25,6 +25,7 @@
         <a class="p-2 text-dark" href="#">Registrar</a>
         <a class="p-2 text-dark" href="#">Actualizar</a>
         <a class="p-2 text-dark" href="#">Eliminar</a>
+        <a class="p-2 text-dark" href="list.php">listado</a>
       </nav>
     </div>
 

@@ -2,11 +2,11 @@
 
 function conexion(){
 
-$host = "host=dpg-cvmpjf6mcj7s73bqu9e0-a.oregon-postgres.render.com";
+$host = "host=dpg-d024s4juibrs73ahhl3g-a.oregon-postgres.render.com";
 $port = "port=5432";
-$dbname = "dbname=agomez";
-$user = "user=agomez_user";
-$password = "password=wz4NrUy8TjbtYvfHVFwCEhHl9hy1gJli";
+$dbname = "dbname=examen_7i9i";
+$user = "user=examen_7i9i_user";
+$password = "password=IXGMJs51LNTLw0YXBmFBD537YCM1J7JU";
 
 $db = pg_connect("$host $port $dbname $user $password");
 
